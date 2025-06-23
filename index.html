@@ -1,110 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michael Connolly | IT Professional</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #ffffff;
-      text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    header img {
-      width: 150px;
-      border-radius: 50%;
-      border: 3px solid #dee2e6;
-    }
-    h1 {
-      margin-top: 1rem;
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 1.25rem;
-      color: #6c757d;
-      margin-bottom: 0.25rem;
-    }
-    .section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .section h3 {
-      border-bottom: 2px solid #dee2e6;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .resume-block {
-      margin-bottom: 1.5rem;
-    }
-    .job-title {
-      font-weight: 600;
-    }
-    .subtext {
-      color: #6c757d;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Michael Connolly • IT Professional</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Bitter:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Script -->
+  <script defer src="main.js"></script>
 </head>
+
 <body>
-  <header>
-    <img src="michael-connolly-headshot.jpg" alt="Michael Connolly headshot" />
-    <h1>Michael Connolly</h1>
-    <h2>Senior IT Analyst • Jamf & Intune Administrator</h2>
-    <p>mike@connollylabs.com • South Easton, MA</p>
+  <!-- ─────────── Sticky Nav ─────────── -->
+  <header class="site-header">
+    <nav>
+      <a href="#profile">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <button id="theme-toggle" aria-label="Toggle color scheme"></button>
+    </nav>
   </header>
 
-  <section class="section">
-    <h3>Profile</h3>
-    <p>Versatile IT Professional with a strong foundation in user support, endpoint management, and cybersecurity. Currently serving as the Senior IT Analyst and Jamf Administrator for a 300-employee organization. Proven ability to adapt, lead, and thrive in fast-paced, dynamic workplaces.</p>
+  <!-- ─────────── Hero / Intro ─────────── -->
+  <section class="hero" id="profile">
+    <img src="michael-connolly-headshot.jpg" alt="Michael Connolly head-shot" />
+    <h1>Michael Connolly</h1>
+    <p class="subtitle">Senior IT Analyst&nbsp;• Jamf & Intune Administrator</p>
+    <p class="meta">
+      <a href="mailto:mike@connollylabs.com">mike@connollylabs.com</a> · South Easton, MA
+    </p>
+    <p class="summary">
+      Versatile IT professional with a strong foundation in user support, endpoint management,
+      and cybersecurity. Currently the Senior IT Analyst &amp; Jamf Admin for a 300-employee
+      organization; proven ability to adapt, lead, and thrive in fast-paced environments. <!-- live-page text  [oai_citation:0‡connollylabs.com](https://connollylabs.com/) -->
+    </p>
   </section>
 
-  <section class="section">
-    <h3>Work Experience</h3>
-    <div class="resume-block">
-      <div class="job-title">Senior IT Analyst, Evolv Technology</div>
-      <div class="subtext">Dec 2023 – Present</div>
-      <p>Administer Jamf Pro, deliver cross-platform support, manage IT assets, and drive process improvements for a 300+ person org.</p>
-    </div>
-    <div class="resume-block">
-      <div class="job-title">Help Desk Analyst, edX</div>
-      <div class="subtext">May 2022 – Dec 2023</div>
-      <p>Provided global IT support, worked across JIRA, Jamf, Intune, Google Workspace, and Office365. Enabled smooth onboarding experiences.</p>
-    </div>
-    <div class="resume-block">
-      <div class="job-title">Assistant Director of Service and Wine, Tarbell’s</div>
-      <div class="subtext">June 2019 – May 2021</div>
-      <p>Led service teams and retail security operations across three outlets. Developed COVID-era business continuity and risk plans.</p>
-    </div>
+  <!-- ─────────── Experience ─────────── -->
+  <section id="experience" class="reveal">
+    <h2>Work Experience</h2>
+
+    <article class="job">
+      <h3>Evolv Technology <span>Senior IT Analyst</span></h3>
+      <time>Dec 2023 – Present</time>
+      <p>Administer Jamf Pro, deliver cross-platform support, manage IT assets,
+        and drive process improvements for a 300+-person org.</p>
+    </article>
+
+    <article class="job">
+      <h3>edX <span>Help Desk Analyst</span></h3>
+      <time>May 2022 – Dec 2023</time>
+      <p>Provided global IT support; worked across JIRA, Jamf, Intune,
+        Google Workspace, and Office 365; enabled smooth onboarding experiences.</p>
+    </article>
+
+    <article class="job">
+      <h3>Tarbell’s <span>Assistant Director of Service &amp; Wine</span></h3>
+      <time>Jun 2019 – May 2021</time>
+      <p>Led service teams and retail security operations across three outlets.
+        Developed COVID-era business-continuity and risk plans.</p>
+    </article>
   </section>
 
-  <section class="section">
-    <h3>Education & Certificates</h3>
-    <div class="resume-block">
-      <div class="job-title">Certificate of Cybersecurity, Caltech</div>
-    </div>
-    <div class="resume-block">
-      <div class="job-title">Philosophy, Franklin Pierce University</div>
-      <div class="subtext">Study abroad: Vienna, Austria (2005)</div>
-    </div>
-    <div class="resume-block">
-      <div class="job-title">Jamf Certified Expert - Jamf Pro</div>
-      <div class="subtext">Issued March 2025 • Valid through March 2028</div>
-    </div>
+  <!-- ─────────── Education ─────────── -->
+  <section id="education" class="reveal">
+    <h2>Education &amp; Certificates</h2>
+
+    <ul class="edu-list">
+      <li><strong>Caltech</strong> — Certificate of Cybersecurity</li>
+      <li><strong>Franklin Pierce University</strong> — Philosophy (Study abroad: Vienna 2005)</li>
+      <li><strong>Jamf Certified Expert – Jamf Pro</strong> (issued Mar 2025, valid thru Mar 2028)</li>
+    </ul>
   </section>
 
-  <section class="section">
-    <h3>Skills</h3>
-    <p>Jamf • Intune • Microsoft 365 • Google Workspace • Active Directory • Zoom • Slack • Salesforce • JIRA</p>
+  <!-- ─────────── Skills ─────────── -->
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <ul class="pill-list">
+      <li>Jamf</li><li>Intune</li><li>Microsoft 365</li><li>Google Workspace</li>
+      <li>Active Directory</li><li>Zoom</li><li>Slack</li><li>Salesforce</li><li>JIRA</li>
+    </ul>
   </section>
+
+  <!-- ─────────── Footer ─────────── -->
+  <footer>
+    <p>© <span id="year"></span> Michael Connolly • Built with 💻 & ☕</p>
+  </footer>
 </body>
 </html>
